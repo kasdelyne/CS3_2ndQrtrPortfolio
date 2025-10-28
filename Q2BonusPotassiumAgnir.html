@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> About Me ! </title>
+    <style>
+        body{
+            background-image: url('https://i.pinimg.com/736x/83/a3/58/83a358c0549994f27de268d12c14cb88.jpg');
+            background-repeat: repeat-x;
+            background-size: 200% auto;
+            background-position: center;
+            animation: moveBg 20s infinite alternate ease-in-out;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: sans-serif, monospace;
+            margin: 0;
+        }
+        @keyframes moveBg{
+            0%{
+                background-position: 0% 50%;
+            }
+            100%{
+                background-position: 100% 50%;
+            }
+        }
+        .card{
+            background-color: #4f749d;
+            color: #ffeab3;
+            text-align: center;
+            padding: 40px;
+            border: 2px solid #ffeab3;
+            box-shadow: 0 4px 10px rgb(0, 0, 0, 0.5);
+            width: 400px;
+            transition: background-color 0.3s ease;
+        }
+        .card h1{
+            font-size: 20px;
+            font-weight:bold;
+            text-shadow: 0 0 10px #ffeab3;
+            margin-bottom:20px;
+        }
+        .card h2{
+            font-size: 15px;
+            margin: 15px 0;
+            text-shadow: 0 0 8px #ffeab2;
+        }
+        .card p{
+            font-size: 16px;
+        }
+        .card:hover{
+            background-color: #de6e6e;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="card">
+            <h1> Hello! My name's Kas </h1>
+            <h2> Hobby: Studying. </h2>
+            <p> Fun Fact: I don't like cats</p>
+        </div>
+    </body>
+</html>
