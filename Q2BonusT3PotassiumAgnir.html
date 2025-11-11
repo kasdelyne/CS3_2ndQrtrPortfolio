@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TASK 3: Keypress Reaction</title>
+  <style>
+
+  </style>
+</head>
+<body>
+    <div> id="key-display">Press any key
+    <p> Refresh the page to restart</p>
+    </div>
+
+    <script>
+        const keyDisplayElement = document.getElementById("key-display");
+        document.body.onkeypress=changeColorPress;
+
+        function changeColorPress(event){
+            document.body.classList.add("key-pressed");
+
+            const pressedKey = event.key;
+            if (pressedKey === " "){
+                keyDisplayElement.textContent = "You pressed: Spacebar!";
+            }
+            else{
+                keyDisplayElement.textContent = "You pressed: "+pressedKey;
+            }
+        }
+    </script>
+</body>
